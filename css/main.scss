@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Nunito:400,600,700|Poppins:400,500,700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+body,
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  overflow: hidden;
+  position: relative;
+}
