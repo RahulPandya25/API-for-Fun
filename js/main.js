@@ -1,24 +1,38 @@
 const GOOGLE_API_KEY = "AIzaSyDdezHKWzFzbCmyv-GXgWu1Lm5_db_H9gM";
 const OpenCageData_API_KEY = "6e72fdbeeaf045828521d48ed940c47f";
-var countryCode;
+// initial
+var countryCode = "ca";
+var categoryId = "";
+
+var marker;
 
 // for Google Map
 function initMap() {
   // map options - setting zoom as 4 and Windsor as center
   var options = {
-    zoom: 3,
-    center: { lat: 42.30008, lng: -83.01654 }
+    zoom: 4,
+    center: { lat: 43.6532, lng: -79.3832 }
   };
 
   // new map instance
   var map = new google.maps.Map(document.getElementById("map"), options);
 
+  this.marker = new google.maps.Marker({
+    position: { lat: 43.6532, lng: -79.3832 },
+    map: map
+  });
+
   // add marker on maps
   google.maps.event.addListener(map, "click", function(event) {
     console.log(event);
 
+    // remove if exists
+    if (this.marker && this.marker.setMap) {
+      this.marker.setMap(null);
+    }
+
     // place marker
-    var marker = new google.maps.Marker({   
+    this.marker = new google.maps.Marker({
       position: event.latLng,
       map: map
     });
