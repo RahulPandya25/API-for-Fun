@@ -88,10 +88,10 @@ body {
 }
 
 .instructions .mockup img:hover {
-  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  -webkit-box-shadow: 0 0 1rem rgba(192, 28, 28, 0.466);
+          box-shadow: 0 0 1rem rgba(192, 28, 28, 0.466);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .about {
