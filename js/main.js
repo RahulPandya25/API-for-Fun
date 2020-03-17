@@ -119,5 +119,9 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-// first req to yt
-executeYTquery("-1");
+(function automaticFunction() {
+  setTimeout(function() {
+    // first req to yt
+    executeYTquery("-1");
+  }, 2000);
+})();
