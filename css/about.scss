@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Nunito:400,600,700|Poppins:400,500,700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+}
+
+.about,
+.instructions,
+.creators {
+  flex: 1;
+  // background-color: lightblue;
+  margin: 0.75rem 2rem;
+  .title {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: lightcoral;
+      bottom: 0;
+      left: 0;
+      width: 100px;
+      height: 2px;
+    }
+  }
+  .text {
+    font-size: 1.2rem;
+    margin: 0.75rem 0;
+    margin-left: 2rem;
+  }
+}
+
+.instructions {
+  padding: 0.75rem 2rem;
+  margin: 0;
+  background-color: #ddd;
+  //   background-color: lightblue;
+  display: flex;
+  .info {
+    ul li {
+      font-size: 1.2rem;
+      margin-left: 2rem;
+    }
+  }
+  .mockup {
+    // float: right;
+    img {
+      margin: 6rem 1rem;
+      width: 50vw;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+      transition: all 0.25s ease-in-out;
+      &:hover {
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+        transform: scale(1.02);
+      }
+    }
+  }
+}
+
+.about {
+  margin-top: 1.5rem;
+  .text {
+    li {
+      font-size: 1.2rem;
+      margin-left: 2rem;
+    }
+  }
+}
