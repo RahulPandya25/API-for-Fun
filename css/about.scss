@@ -31,7 +31,7 @@ body {
     &::before {
       position: absolute;
       content: "";
-      background-color: lightcoral;
+      background-color: rgb(192, 28, 28);
       bottom: 0;
       left: 0;
       width: 100px;
@@ -56,11 +56,14 @@ body {
       font-size: 1.2rem;
       margin-left: 2rem;
     }
+    ul li:last-child {
+      color: rgb(192, 28, 28);
+    }
   }
   .mockup {
     // float: right;
     img {
-      margin: 6rem 1rem;
+      margin: 6rem 1rem 4.5rem 1rem;
       width: 50vw;
       box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
       transition: all 0.25s ease-in-out;

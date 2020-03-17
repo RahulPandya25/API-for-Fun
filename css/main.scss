@@ -19,6 +19,27 @@
 
   display: flex;
 
+  .go-back {
+    background-color: #eee;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+    border-radius: 10px;
+    transition: all 0.15s ease-in-out;
+    &:hover {
+      transform: translatey(-2px);
+      background-color: #ddd;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 0.75rem 1rem;
+      font-size: 1.5rem;
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
   #map {
     width: 70vw;
   }

@@ -45,7 +45,7 @@ body {
 .creators .title::before {
   position: absolute;
   content: "";
-  background-color: lightcoral;
+  background-color: #c01c1c;
   bottom: 0;
   left: 0;
   width: 100px;
@@ -74,8 +74,12 @@ body {
   margin-left: 2rem;
 }
 
+.instructions .info ul li:last-child {
+  color: #c01c1c;
+}
+
 .instructions .mockup img {
-  margin: 6rem 1rem;
+  margin: 6rem 1rem 4.5rem 1rem;
   width: 50vw;
   -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
