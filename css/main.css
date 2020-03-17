@@ -28,18 +28,124 @@
 .container .country {
   position: absolute;
   content: "";
-  width: 500px;
-  height: 50px;
   bottom: 35px;
-  left: calc(70vw*0.5);
+  left: calc(70vw * 0.5);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  border-radius: 10x;
-  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .country .name {
+  font-size: 1.5rem;
+  padding: 0.75rem 2rem;
+  letter-spacing: 1px;
+  color: white;
 }
 
 .container .yt {
   width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #eee;
+}
+
+.container .yt .yt-title {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.container .yt .vid-cat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .yt .vid-cat a {
+  cursor: pointer;
+  margin: 0 0.25rem;
+  font-size: 1.1rem;
+  position: relative;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.container .yt .vid-cat a.active::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.container .yt .yt-videos {
+  background-color: rgba(0, 0, 0, 0.08);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-top: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .yt .yt-videos .item {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.container .yt .yt-videos .item .item-vid {
+  height: 200px;
+  width: 356px;
+}
+
+.container .yt .yt-videos .item .item-title {
+  font-size: 1.2rem;
+  max-width: 300px;
+}
+
+.container .yt .yt-videos .item::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -12px;
+  height: 2px;
+  width: 110%;
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=main.css.map */

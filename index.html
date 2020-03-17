@@ -9,17 +9,22 @@
   <body>
     <div class="container">
       <div id="map"></div>
-      <div class="country"></div>
+      <div class="country"><span class="name">Canada</span></div>
 
       <div class="yt">
+        <div class="yt-title">Trending YouTube videos</div>
+
         <div class="vid-cat">
-          <a>Music</a>
-          <a>Movies</a>
-          <a>News</a>
-          <a>Games</a>
-          <a>Fashion</a>
+          <a class="nav-links" onClick="executeYTquery('10')">Music</a>
+          <a class="nav-links" onClick="executeYTquery('30')"
+            >Movies</a
+          >
+          <a class="nav-links" onClick="executeYTquery('25')">News</a>
+          <a class="nav-links" onClick="executeYTquery('20')">Games</a>
+          <a class="nav-links" onClick="executeYTquery('17')"
+            >Sports</a
+          >
         </div>
-        <div class="yt-title">Trending videos</div>
         <div class="yt-videos"></div>
       </div>
     </div>
@@ -28,6 +33,8 @@
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <!-- axios js -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- custom js -->
+    <script src="js/main.js"></script>
     <!-- yt api -->
     <script src="https://apis.google.com/js/client.js?onload=init"></script>
     <!-- gmap api -->
@@ -36,7 +43,5 @@
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdezHKWzFzbCmyv-GXgWu1Lm5_db_H9gM&callback=initMap"
     ></script>
-    <!-- custom js -->
-    <script src="js/main.js"></script>
   </body>
 </html>
