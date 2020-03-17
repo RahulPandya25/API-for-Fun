@@ -9,21 +9,19 @@
   <body>
     <div class="container">
       <div id="map"></div>
-      <div class="country"><span class="name">Canada</span></div>
+      <div class="country">
+        <span id="country-name" class="name">Canada</span>
+      </div>
 
       <div class="yt">
         <div class="yt-title">Trending YouTube videos</div>
 
         <div class="vid-cat">
           <a class="nav-links" onClick="executeYTquery('10')">Music</a>
-          <a class="nav-links" onClick="executeYTquery('30')"
-            >Movies</a
-          >
+          <a class="nav-links" onClick="executeYTquery('30')">Movies</a>
           <a class="nav-links" onClick="executeYTquery('25')">News</a>
           <a class="nav-links" onClick="executeYTquery('20')">Games</a>
-          <a class="nav-links" onClick="executeYTquery('17')"
-            >Sports</a
-          >
+          <a class="nav-links" onClick="executeYTquery('17')">Sports</a>
         </div>
         <div class="yt-videos"></div>
       </div>

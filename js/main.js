@@ -90,10 +90,19 @@ function initMap() {
           "&language=en&pretty=1"
       )
       .then(response => {
+        //   update county label
+        var country = response.data.results[0].components.country;
+        document.getElementById("country-name").innerHTML = country;
         //   update country code
         countryCode = response.data.results[0].components.country_code.toUpperCase();
-        // execute YT query
+        //   execute YT query
         executeYTquery("-1");
+
+        // removing active class of vid cat
+        var current = document.getElementsByClassName("active");
+        if (current.length > 0) {
+          current[0].className = current[0].className.replace(" active", "");
+        }
       });
   });
 }
