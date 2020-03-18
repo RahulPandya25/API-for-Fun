@@ -3,48 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>API for Fun</title>
+    <title>Instructions</title>
+    <link rel="stylesheet" href="css/about.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="go-back"><a href="/about.html">Go Back</a></div>
-      <div id="map"></div>
-      <div class="country">
-        <span id="country-name" class="name">Canada</span>
+    <div class="about">
+      <div class="title">What is this Project about?</div>
+      <div class="text">
+        This Project is about working with APIs. We have used 3 APIs:
+        <li>
+          Google Maps API for displaying maps (free version came with water mark
+          - For development Purpose only)
+        </li>
+        <li>
+          OpenCageData API for Geocoding to find region code using latitude and
+          longitude co-ordinates
+        </li>
+        <li>
+          YouTube Data V3 API for searching top 10 trending videos for that
+          region as per the categories i.e. Music, News, Sports, Gaming and
+          Movies
+        </li>
       </div>
-
-      <div class="yt">
-        <div class="yt-title">Trending YouTube videos</div>
-
-        <div class="vid-cat">
-          <a class="nav-links" onClick="executeYTquery('10')">Music</a>
-          <a class="nav-links" onClick="executeYTquery('30')">Movies</a>
-          <a class="nav-links" onClick="executeYTquery('25')">News</a>
-          <a class="nav-links" onClick="executeYTquery('20')">Games</a>
-          <a class="nav-links" onClick="executeYTquery('17')">Sports</a>
+    </div>
+    <div class="instructions">
+      <div class="info">
+        <div class="title">Instructions</div>
+        <div class="text">
+          <ul>
+            <li>
+              By default, when you land on the website map is centered to
+              Toronto and a marker is placed. You will be able to see trending
+              videos of this region.
+            </li>
+            <li>
+              If you want to switch the genre of trending videos, simply select
+              your desired category on the top right corner.
+            </li>
+            <li>
+              To change the region move around the map and place the marker on
+              any country. You will see name of the country below the map and
+              trending videos of that region in the YouTube section.
+            </li>
+            <li>
+              Try out the website by clicking the mockup image on the right!
+            </li>
+          </ul>
         </div>
-        <div class="yt-videos"></div>
+      </div>
+      <div class="mockup">
+        <a href="/demo.html"
+          ><img src="app screenshot.JPG" alt="Application screenshot"
+        /></a>
       </div>
     </div>
 
-    <!-- scripts -->
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <!-- axios js -->
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <!-- custom js -->
-    <script src="js/main.js"></script>
-    <!-- yt api -->
-    <script
-      async
-      defer
-      src="https://apis.google.com/js/client.js?onload=init"
-    ></script>
-    <!-- gmap api -->
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdezHKWzFzbCmyv-GXgWu1Lm5_db_H9gM&callback=initMap"
-    ></script>
+    <div class="creators">
+      <div class="title">Created By</div>
+      <div class="text">
+        Group 30: Rahul Pandya, Manan Parmar, Aayushee Dave, Richa Gupta
+      </div>
+    </div>
   </body>
 </html>

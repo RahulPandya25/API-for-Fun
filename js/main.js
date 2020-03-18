@@ -123,5 +123,5 @@ for (var i = 0; i < btns.length; i++) {
   setTimeout(function() {
     // first req to yt
     executeYTquery("-1");
-  }, 2000);
+  }, 3000);
 })();
